@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PoolManager : MonoBehaviour
 {
@@ -47,5 +48,9 @@ public class PoolManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void RestartLevel(){
+        SceneManager.LoadScene("SampleScene");
     }
 }
